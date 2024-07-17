@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e0f2f1;
+    margin: 0;
+    padding: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+h1 {
+    color: rgb(0, 212, 159);
+    font-size: 50px;
+    background-color: #f5f5dc;
+}
+.inline {
+    display: inline;
+    text-align: center;
+    margin: 0 10px;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered h1 {
+    overflow: hidden; /* Ensures the text is hidden until animated */
+    /* border-right: .15em solid black; Adds a cursor-like border */
+    white-space: nowrap; /* Keeps the text on a single line */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 21%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 183, 255);
+    font-size: 60px;
+    margin: 0px 0 50px;
+}
+h3 {
+    font-size: 40px;
+    color: red;
+    margin: 0px 0 50px;
+}
+h4 {
+    font-size: 35px;
+    margin: 0px 0 50px;
+    padding: 0 180px;
+}
+.mpv_pdf_wrapper {
+    height: 700px;
+    width: 70%;
+    margin: auto;
+}
+p {
+    font-size: 15px;
+}
+
+.medium {
+    font-size: 40px;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.large {
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heading-large {
+    font-size: 25px;
+}
+nav, main, footer {
+    padding: 20px;
+    margin: 10px;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 30px;
+    font-size: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: DodgerBlue;
+    transform: scale(1.1);
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background: #f4f4f4;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+.download-btn {
+    background-color: DodgerBlue;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Parisienne', cursive;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: RoyalBlue;
+    transform: scale(1.1);
+}
+.roboto-font {
+    font-family: 'Roboto', sans-serif;
+}
+.lobster-font {
+    font-family: 'Lobster', cursive;
+}
+.open-sans-font {
+    font-family: 'Open Sans', sans-serif;
+}
+.montserrat-font {
+    font-family: 'Montserrat', sans-serif;
+}
+.dancing-script-font {
+    font-family: 'Dancing Script', cursive;
+}
+.pacifico-font {
+    font-family: 'Pacifico', cursive;
+}
+.source-sans-pro-font {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.merriweather-font {
+    font-family: 'Merriweather', serif;
+}
+.ubuntu-font {
+    font-family: 'Ubuntu', cursive;
+}
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+.oswald-font {
+    font-family: 'Oswald', sans-serif;
+}
+.poppins-font {
+    font-family: 'Poppins', sans-serif;
+}
+.georgia-font {
+    font-family: 'Georgia', serif;
+}
+.verdana-font {
+    font-family: 'Verdana', sans-serif;
+}
+.nunito-font {
+    font-family: 'Nunito', sans-serif;
+}
+.inconsolata-font {
+    font-family: 'Inconsolata', monospace;
+}
+.great-vibes-font {
+    font-family: 'Great Vibes', cursive;
+}
+.sacramento-font {
+    font-family: 'Sacramento', cursive;
+}
+.allura-font {
+    font-family: 'Allura', cursive;
+}
+.amatic-font {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
+.parisienne-font {
+    font-family: 'Parisienne', cursive;
+}
+.small {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.large {
+    right: 480px;
+}
+.advertisement {
+    position: relative;
+    right: -960px;
+    z-index: 0;
+    width: 360px; 
+    height: 640px;
+    overflow: hidden;
+}
+
+.advertisement video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
